@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imv_call"
+        android:layout_width="165dp"
+        android:layout_height="166dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imv_go"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imv_go"
+        app:layout_constraintTop_toBottomOf="@+id/imv_elep"
+        app:srcCompat="@drawable/call" />
+
+    <ImageView
+        android:id="@+id/imv_go"
+        android:layout_width="184dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imv_hip"
+        app:srcCompat="@drawable/go" />
+
+    <ImageView
+        android:id="@+id/imv_hip"
+        android:layout_width="183dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hippo" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="165dp"
+        android:layout_height="228dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912"
+        app:srcCompat="@drawable/penguin2" />
+
+    <ImageView
+        android:id="@+id/imv_elep"
+        android:layout_width="166dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="60dp"
+        android:onClick="playSound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toEndOf="@+id/imv_hip"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/elephant" />
+</androidx.constraintlayout.widget.ConstraintLayout>
